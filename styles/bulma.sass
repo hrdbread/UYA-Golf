@@ -9,6 +9,8 @@
 @import "../sass/helpers/_all"
 @import "../sass/layout/_all"
 
+.uya-body
+  background: linear-gradient(180deg, $white 85%, $uya-white  100%)
 
 .hero
     h1
@@ -28,7 +30,7 @@
     .buttons
       margin-top: 2rem
 
-.about, .course, .golfer
+.about, .golfer
     .title
       font-size: 48px
       color: $uya-green
@@ -41,3 +43,36 @@
     .logo
       margin-top: 2rem
       margin-bottom: 2rem
+
+.course
+  +mobile
+      background: linear-gradient(180deg, $white 15%, $uya-blue  15%)
+  +tablet
+      background: $uya-blue
+  +desktop
+      background: $uya-blue
+      background: linear-gradient(0deg, $white 15%, $uya-blue  15%)
+
+  a
+    color: $uya-white
+    text-decoration: underline
+    margin-top: 2rem
+
+  .title
+    font-size: 48px
+    color: $uya-white
+    font-weight: bold
+    margin-bottom: 2rem
+
+  .subtitle
+    font-weight: bold
+    color: $uya-white
+
+  p
+    color: $uya-white
+
+.footer
+  background: transparent
+  padding: 1.5rem
+  border-top: $uya-grey solid 1px
+  border-bottom: $uya-blue solid 3rem
