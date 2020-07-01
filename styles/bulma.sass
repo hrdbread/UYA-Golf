@@ -9,18 +9,24 @@
 @import "../sass/helpers/_all"
 @import "../sass/layout/_all"
 
+
+.button
+  font-weight: bold
+
 .uya-body
-  background: linear-gradient(180deg, $white 85%, $uya-white  100%)
+  background: linear-gradient(180deg, $white 95%, $uya-white  100%)
 
 .hero
     h1
       font-size: 86px
       color: $uya-blue
 
+
     h2
       font-size: 24px
       color: $uya-grey
       font-weight: bold
+
 
 
     h3
@@ -30,7 +36,17 @@
     .buttons
       margin-top: 2rem
 
+.about
+  margin-bottom: 6rem
+
+.golfer
+    margin-bottom: 6rem
+    margin-top: 6rem
+
+
+
 .about, .golfer
+
     .title
       font-size: 48px
       color: $uya-green
@@ -44,7 +60,30 @@
       margin-top: 2rem
       margin-bottom: 2rem
 
+    .eyebrow
+      font-size: 24px
+      font-weight: bold
+      font-family: $title-family
+
+    .date
+      font-size: 36px
+      color: $uya-blue
+      font-weight: bold
+      font-family: $title-family
+      margin-top: 0 !important
+
+    .price
+      font-size: 24px
+      font-weight: bold
+
+
+
 .course
+  margin-bottom: 6rem
+  margin-top: 6rem
+
+
+
   +mobile
       background: linear-gradient(180deg, $white 15%, $uya-blue  15%)
   +tablet
@@ -71,7 +110,39 @@
   p
     color: $uya-white
 
+
+.sponsor
+    margin-bottom: 12rem
+    margin-top: 8rem
+    color: $uya-white
+
+    .title
+      color: $uya-white
+      font-size: 36px
+      font-weight: bold
+      margin-bottom: 3rem
+
+
+    .subtitle
+      color: $uya-orange
+      font-size: 24px
+      font-weight: bold
+      margin-top: 2rem
+
+    .button
+      margin-top: 1rem
+
+
+    +mobile
+        background: $uya-green
+
+    +desktop
+        background: $uya-blue
+        background: linear-gradient(- 90deg, $white 45%, $uya-green  45%)
+
+
 .footer
+  margin-top: 6rem
   background: transparent
   padding: 1.5rem
   border-top: $uya-grey solid 1px
