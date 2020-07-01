@@ -17,9 +17,25 @@
   background: linear-gradient(180deg, $white 95%, $uya-white  100%)
 
 .hero
+    background: url(../imgs/crosswinds.png)
+    background-repeat: no-repeat
+    background-size: 100%
+    background-position-y: 180%
+
+    +mobile
+      background-position-y: 115%
+
+    +tablet
+      background-position-y: 135%
+
+
+
     h1
       font-size: 86px
       color: $uya-blue
+
+      +mobile
+      font-size: 60px
 
 
     h2
@@ -27,11 +43,19 @@
       color: $uya-grey
       font-weight: bold
 
+      +mobile
+      font-size: 16px
+
 
 
     h3
       font-size: 24px
       font-weight: normal
+
+      +mobile
+      font-size: 16px
+
+
 
     .buttons
       margin-top: 2rem

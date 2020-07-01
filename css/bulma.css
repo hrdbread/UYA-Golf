@@ -9846,18 +9846,37 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background: linear-gradient(180deg, white 95%, #f7f8e2 100%);
 }
 
+.hero {
+  background: url(../imgs/crosswinds.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: 180%;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    background-position-y: 115%;
+  }
+}
+@media screen and (min-width: 769px), print {
+  .hero {
+    background-position-y: 135%;
+  }
+}
 .hero h1 {
   font-size: 86px;
   color: #324d94;
+  font-size: 60px;
 }
 .hero h2 {
   font-size: 24px;
   color: #3c3d42;
   font-weight: bold;
+  font-size: 16px;
 }
 .hero h3 {
   font-size: 24px;
   font-weight: normal;
+  font-size: 16px;
 }
 .hero .buttons {
   margin-top: 2rem;
